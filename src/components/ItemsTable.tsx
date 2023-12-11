@@ -46,13 +46,12 @@ const ItemsTable: FC<ItemsTableProps> = ({ items }) => {
                     sx={{
                         "& *": {
                             fontWeight: "bold",
-                            textTransform: "uppercase",
                         },
                     }}
                 >
                     <TableRow>
                         <TableCell>Producto</TableCell>
-                        <TableCell align="right">#</TableCell>
+                        <TableCell align="right">Cantidad</TableCell>
                         <TableCell align="right">Precio</TableCell>
                         <TableCell align="center"></TableCell>
                     </TableRow>
@@ -106,8 +105,8 @@ const ItemsTable: FC<ItemsTableProps> = ({ items }) => {
                                     <TableCell align="right">{item.quantity}</TableCell>
                                     <TableCell align="right">$ {item.price}</TableCell>
                                     <TableCell align="center">
-                                        <Grid container spacing={2}>
-                                            <Grid item xs={6}>
+                                        <Grid container>
+                                            <Grid item xs={12}>
                                                 <IconButton
                                                     color="success"
                                                     size="large"
@@ -118,7 +117,7 @@ const ItemsTable: FC<ItemsTableProps> = ({ items }) => {
                                                     <AddCircle />
                                                 </IconButton>
                                             </Grid>
-                                            <Grid item xs={6}>
+                                            <Grid item xs={12}>
                                                 <IconButton
                                                     color="error"
                                                     size="large"
