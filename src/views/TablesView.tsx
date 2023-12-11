@@ -67,7 +67,7 @@ const TablesView: FunctionComponent<TablesViewProps> = () => {
                                 sx={{
                                     height: "100%",
                                 }}
-                                onClick={(event) => {
+                                onClick={() => {
                                     navigate(`/tables/${table.id}`);
                                 }}
                             >
